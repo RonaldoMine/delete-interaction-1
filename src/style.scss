@@ -1,0 +1,138 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+}
+
+#app {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  padding: 0 0.5rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .delete {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: crimson;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    //padding: 1rem 3rem;
+    width: 150px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+    span {
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+      opacity: 0;
+      transform: translateX(50px);
+      svg {
+        width: 50px;
+      }
+    }
+    .middle {
+      margin: 3rem 0 1.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      z-index: 999;
+      .trash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        opacity: 1;
+        transform: scale(0.8);
+        &-head {
+          transform-origin: left;
+          //transform: rotate(-100deg);
+        }
+        &-body {
+          overflow: hidden;
+          background: #fff;
+        }
+      }
+      .yes,
+      .no {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        button {
+          transform: translateY(30px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          outline: none;
+          border: none;
+          border-radius: 12px;
+          padding: 4px 12px;
+          cursor: pointer;
+          span {
+            display: block;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      span {
+        transform: translateY(20px);
+        display: block;
+        font-weight: 500;
+      }
+    }
+  }
+}

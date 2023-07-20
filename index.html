@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.scss">
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div id="app">
+    <main id="main" class="main">
+      <div class="container">
+        <div class="top">
+          <svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28.9551 19.4916L36.6536 13.0762V2.05H28.2373C26.5662 2.05 24.9636 2.71382 23.782 3.89542L20.1144 7.56308C18.8095 8.86799 18.8095 10.9837 20.1144 12.2886C20.4785 12.6527 20.9058 12.9153 21.361 13.0762L7.25053 13.0762C4.35073 13.0762 1.99997 15.4269 1.99997 18.3267C1.99997 19.7766 3.17535 20.952 4.62525 20.952L24.9215 20.952C26.3954 20.952 27.8227 20.4352 28.9551 19.4916Z"
+              fill="white" />
+            <path
+              d="M36.6536 13.0762L28.9551 19.4916C27.8227 20.4352 26.3954 20.952 24.9215 20.952L4.62525 20.952C3.17535 20.952 1.99997 19.7766 1.99997 18.3267C1.99997 15.4269 4.35073 13.0762 7.25053 13.0762H21.361"
+              stroke="#020308" stroke-width="3.15033" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M27.2026 9.92583L24.8399 12.2886C23.535 13.5935 21.4193 13.5935 20.1144 12.2886C18.8095 10.9837 18.8095 8.86799 20.1144 7.56308L23.782 3.89542C24.9636 2.71382 26.5662 2.05 28.2373 2.05H36.6536"
+              stroke="#020308" stroke-width="3.15033" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="middle">
+          <div class="no">
+            <button>
+              <span>no</span>
+            </button>
+          </div>
+          <div class="trash">
+            <svg class="trash-head" width="62" height="8" viewBox="0 0 62 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7H61" stroke="black" stroke-width="2" stroke-linecap="round" />
+              <path d="M15 1V7H47V1H15Z" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg class="trash-body" width="55" height="55" viewBox="0 0 55 55" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 5.21136e-07L0.233743 1.2236L9.94281 52.0486C10.1987 53.3883 11.364 54.3331 12.7603 54.3331H42.3824C43.9137 54.3331 45.2607 53.2019 45.516 51.7014L54.1245 1.10786L54.313 2.41968e-07L53.1824 0L1.27532 5.36473e-07L0 5.21136e-07ZM2.44823 1.9851L51.9494 1.9851L43.5293 51.4708C43.4442 51.9709 42.9952 52.348 42.4848 52.348H12.8627C12.3973 52.348 12.0089 52.0331 11.9236 51.5865L2.44823 1.9851Z"
+                fill="black" />
+            </svg>
+          </div>
+          <div class="yes">
+            <button>
+              <span>Yes</span>
+            </button>
+          </div>
+        </div>
+        <div class="bottom">
+          <span>Are you sure ?</span>
+        </div>
+      </div>
+      <button class="delete">
+        <span>Delete</span>
+      </button>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
