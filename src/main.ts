@@ -118,3 +118,34 @@ deleteBtn.addEventListener("click", () => {
     },
   });
 });
+
+noBtn.addEventListener("click", () => {
+  gsap.to(".container", {
+    duration: primaryDuration,
+    opacity: 0,
+  });
+  gsap.to(".top", {
+    duration: primaryDuration,
+    rotate: -40,
+  });
+  gsap.to(deleteBtn, {
+    y: 2,
+    onComplete: () => {
+      gsap.to(deleteBtn, {
+        width: "150px",
+        height: "50px",
+        borderRadius: "8px",
+      });
+      gsap.to(".delete span", {
+        duration: primaryDuration,
+        opacity: 1,
+      });
+      gsap.to(".top", {
+        duration: primaryDuration,
+        opacity: 0,
+        rotate: 0,
+      });
+      deleteBtn.disabled = false;
+    },
+  });
+});
